@@ -14,25 +14,17 @@ To juxtapose against CSR/reduction in Teacher-Student Ratio, we will use teacher
 
 ### Problem Statement
 
-
-
 Better student performance is traditionally associated lower Teacher-Student ratios and experienced teachers.
 
-
 As a member of the California State Education Department deliberating whether mandate smaller class sizes or hire more experienced teachers. This project aims conduct a preliminary study to verify this hypothesis in California using data from the 2019 SAT & ACT from K12 test-takers to see if this relationship exists by comparing the
-
 
     - Teacher-Student Ratio
     - Teacher's Teaching Experience (Average years of teaching experience and average years of teaching in the county)
 
 of counties with students scoring above the SAT benchmark and ACT score of 21 in 2019 (hereby referred to as the measured outcomes)
 
-
 To answer the question:
 > "Do lower Teacher-K12 Student Ratios or greater teacher experience affect the measured outcomes for the SAT and ACT?"
-
-
-
 
 ### Datasets
 
