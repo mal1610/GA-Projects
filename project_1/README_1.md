@@ -82,7 +82,7 @@ Counties that performed above the state average (12.98%) for students who met SA
   - Average Years of Teaching in County >= 8
 ---
 
-###CONCLUSION AND RECOMMENDATIONS  
+### CONCLUSION AND RECOMMENDATIONS  
 
 
 * There is **no evidence** that lower Teacher-K12 Student Ratios will positively affect SAT and ACT outcomes as no correlation was observed for the SAT while a weak negative correlation was observed for the ACT.
@@ -91,7 +91,7 @@ Counties that performed above the state average (12.98%) for students who met SA
 
 As a member of the California Education Department, my preliminary recommendation would be for the state to hire more experienced teachers (with at least 8 years of experience teaching in the county or 11 years of experience overall) rather than trying to decrease the Teacher-K12 Student Ratio as teaching experience has shown to improve SAT and ACT outcomes compared to Teacher-K12 Student Ratios.
 
-###WAY AHEAD
+### WAY AHEAD
 
 More granular data is needed to drill down to the schools in California that require additional support. Access to the data below at the district/school level will be helpful for deeper analysis:
 
