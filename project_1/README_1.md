@@ -33,13 +33,28 @@ We will be using the following datasets in this notebook, brief description of t
 * [`act_2019_ca.csv`](./data/act_2019_ca.csv): 2019 ACT Scores in California by School
 * [`sat_2019_ca.csv`](./data/sat_2019_ca.csv): 2019 SAT Scores in California by School
 * [`StaffEducation.txt`](./data/StaffEducation.txt): 2018-2019 Certificated Staff Education Report: State of California Teachers: Shows the number of teachers per county by education level for counties in California in 2018-2019
-* [`StaffExp.txt`](./data/StaffExp.txt): 2018-2019 Certificated Staff Experience Report: State of California Teachers: Shows the average teacher years in service and teaching years in the county for counties in California in 2018-2019
+* [`StaffExp.txt`](./data/StaffExp.txt): 2018-2019 Certificated Staff Experience Report: State of California Teachers: Shows the average teacher years in service and teaching years in the county for counties in California in 2018-201
 
 ---
 
 ### METHODOLOGY
 
 2 consolidated DataFrames showing the measured ACT and SAT outcomes for every California county vis-a-vis the Teacher-K12 Students Ratio, Average Teacher's Years in Service and Average Teacher's Years teaching in County, were obtained after cleaning the data. EDA and visualisation were performed on the DataFrames.
+
+The following data is present in the columns of the consolidated DataFrames
+
+|Feature|Type|Dataset|Description|
+|---|---|---|---|
+|county|object|sat_teachers/act_teachers|County name in the state of California|
+|k12_enrollment|float|sat_teachers/act_teachers|Number of K12 students enrolled in the county|
+|k12_test_takers|float|sat_teachers/act_teachers|Number of K12 students taking the 2019 SAT|
+|participation_rate|float|sat_teachers/act_teachers|Number of K12 students taking the 2019 SAT as a percentage of total K12 enrollment in the county (%)
+|pct_met_bm|float|sat_teachers|Percentage of K12 test takers that met the 2019 SAT Benchmark Scores for both ERW and Math (%)
+|teachers_total|int|sat_teachers/act_teachers|Total number of teachers in the county
+|avg_years_of_service|int|sat_teachers/act_teachers|Average teacher years of service in the county
+|avg_years_in_county|int|sat_teachers/act_teachers|Average teacher years teaching in the county
+|teacher_k12_student ratio|float|sat_teachers/act_teachers|Percentage of K12 students per teacher in the county (%)
+|pct_>=21|float|act_teachers| Percentage of K12 students who scored at least 21 marks for the 2019 ACT (%)
 
 ---
 ### OBSERVATIONS AND FINDINGS
