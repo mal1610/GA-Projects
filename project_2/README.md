@@ -43,7 +43,7 @@ The data dictionary for the features used in this dataset can be found on the [K
 
 | Number of Features | Optimal Model | Training RMSE | Kaggle RMSE |
 |---|---|---|---|
-| 5 | Ridge | 32278 | 30767 |
+| 5 | Ridge | 30273 | 30767 |
 | 10 | LASSO | 25563 | 110795 |
 | 15 | LASSO | 25613 | 78737 |
 | 20 | LASSO | 24522 | 56719 |
