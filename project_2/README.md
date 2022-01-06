@@ -1,4 +1,4 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project 1: Standardized Test Analysis
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project 2: Ames Housing Data & Kaggle Challenge
 
 ### OVERVIEW
 Property owners who wish to put their property up for sale tend to want to obtain a preliminary valuation for consideration.
@@ -65,19 +65,21 @@ Therefore, we will select features = **5** as the number of features in our web 
 
 | Feature Names | Coefficient |
 |---|---|
-| Gr Liv Area | 0.101994 |
-| Overall Qual | 0.083345 |
-| has_bsmt | -0.069733 |
-| Overall Cond | 0.053243 |
-| Lot Area | 0.0465 |
+| Gr Liv Area | 0.14053 |
+| Overall Qual | 0.21168 |
+| has_bsmt | -0.27008 |
+| Overall Cond | 0.30878 |
+| Lot Area | 0.04276 |
 |  |  |
 |  |  |
 
-* The coefficients of Ridge regression model using the top 5 features is shown in the dataframe below and can be interpreted as such (due to Log1p transformations on the target and the features) instead of a **unit change** of a feature causinga constant change in the target, the effect of the features on the target will be in terms of percentages.
+* The coefficients of Ridge regression model using the top 5 features is shown in the dataframe below and can be interpreted as such (due to Log1p transformations on the target and the features) instead of a **unit change** of a feature causing constant change in the target, the effect of the features on the target will be in terms of percentages.
 
 **The coefficient can be interpreted as the approximate percent increase in the the target(`SalePrice`) for every 1% increase in the features while holding other features constant.**
 
-For example, this means that a 1% increase in `Gr Liv Area` would result in a ~0.10% increase in the `SalePrice`, holding the other 9 features constant. The largest contributor to `SalePrice` is `Gr Liv Area`.
+For example, this means that a 1% increase in `Gr Liv Area` would result in a ~0.14% increase in the `SalePrice`, holding the other 9 features constant. The largest contributor to `SalePrice` is `Gr Liv Area`.
+
+Note that the strongest coefficients are
 
 ### ANSWERING THE BUSINESS QUESTION AND FUTURE WORK
 
