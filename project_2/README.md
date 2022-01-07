@@ -55,7 +55,7 @@ The data dictionary for the features used in this dataset can be found on the [K
 
 * The Ridge regression model using 5 features will serve as our baseline RMSE as we expect the scores to get better as we include more features. As mentioned above, with the exception of the baseline, inclusion of additional features tend to increase the RMSE of the model when exposed to unseen data during submission to Kaggle.
 
-* The model likely does not have an overfitting as it uses relatively few features (max 30/90 features) and the RMSE score, nor is it an underfitting problem as the RMSE score when all 90 features are fitted (approx 20K) is relatively close to the RMSE score with 30 features (approx 21K). Therefore a plausible explanation would be the presence of outliers in the Kaggle test set, which adversely impacted the performance of the regression model.
+* The model likely overfitted when we take 10 features and above, as shown from the higher RMSE score on the unseen data when compared to when we used 5 features, even though the RMSE score improved after the inclusion of additional features. Another reason for the poorer performance on unseen data is that there may be outliers in the unseen data, which was not picked up during data cleaning due to the format of a Kaggle competition, regression models are sensitive to outliers as the coefficients would be weighted to take the outliers into account.
 
 * Selecting the best performing model against unseen data (5 features) led to a RMSE (taking the kaggle test set) that is approximately 18% (or ~$30K) of the mean SalePrice of the training set, which is acceptable given that the valuation obtained via our web app is supposed to be a preliminary valuation.
 
