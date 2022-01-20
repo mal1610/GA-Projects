@@ -13,8 +13,8 @@
 **Deliverable: Binary Classification Model**
 
 
-Posts were obtained from both each the r/Football 
-and r/SoccerBetting subreddits to train a binary 
+Posts were obtained from both each the r/Football
+and r/SoccerBetting subreddits to train a binary
 classification model to build a binary classification model
 that would classify whether a post belonged to r/Football or r/Soccerbetting.
 The classification result will be used as a proxy to detect posts that contain
@@ -35,7 +35,7 @@ Due to the laissez-faire approach adopted by Reddit with respect to online conte
 The moderators of the r/Football subreddit (the customer) has engaged our Tech Consultancy firm to develop a classification model to detect whether a post is related to Soccer Betting in the subreddit. The moderators do not wish for gambling content to be on the subreddit as there are users who are minors and such content would not be appropriate. The intent is for the model to be ran periodically to remove soccer-betting related posts from the subreddit.
 
 ## Results
-Using the [PushShift API](https://github.com/pushshift/api), 
+Using the [PushShift API](https://github.com/pushshift/api),
 2000 posts each were obtained from the r/Football and r/Soccerbetting subreddits. The data was preprocessed, tokenized and provided as input into  the candidate models.
 
 
@@ -62,4 +62,4 @@ After cleaning and preprocessing the data, several models were fitted and compar
 * **Increase Model Vocabulary**: Instead of simply obtaining data from the r/Soccerbetting subreddit, data can be obtained from other subreddits which centre on gambling in general (such as [r/Gambling](https://www.reddit.com/r/gambling/), this will increase the model's ability to generalize when exposed to more generic words associated with gambling.
 
 
-* **Improve Data Quality**: One of the likely reasons for misclassification is typo errors from the user (mentioned above), a improvements to the text preprocessing function that takes common spelling errors into account. An example would be to use the `TextBlob` library with the `Word` module. Rectifying spelling mistakes will enable improve lemmatization and stemming performance, which will likely contribute to improvements in model performance.
+* **Improve Data Quality**: One of the likely reasons for misclassification is typo errors from the user (mentioned above), improvements to the text preprocessing function that takes common spelling errors into account would enhance the text preprocessing capability of the model. The `TextBlob` library with the `Word` module is one way to rectify common typo errors. Rectifying spelling mistakes will enable improve lemmatization and stemming performance, which will likely contribute to improvements in model performance.
